@@ -1,0 +1,6 @@
+pyttsx3
+flask
+chess
+webbrowser
+
+obs: este projeto foi feito no windows, então pode ser que não funcione em outros sistemas operacionais.
