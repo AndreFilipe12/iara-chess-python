@@ -7,7 +7,7 @@
 Execute o seguinte comando em seu terminal:
 
 ```
-git clone link.git
+git clone https://github.com/islycodes/iara-chess-python.git
 ```
 
 # Requerimentos
