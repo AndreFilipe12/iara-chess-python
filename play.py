@@ -215,7 +215,7 @@ app = Flask(__name__)
 # apresentação
 def lines():
     speak(
-        "Olá, eu sou a IARA. Este é o nome que meus desenvolvedores Adrielly Isly, Diego Moretti, Felipe Botelho, Igor Marcucci, Karlos Eduardo e Henrique Santa Terra me deram. Vamos jogar Xadrez!.")
+        ".")
 
 @app.route("/")
 def main():
@@ -228,16 +228,15 @@ def main():
     ret += '</head><body>'
     ret += '<body style="background-color: #232527; margin: 40px 60px 0px 60px; ">'
     ret += '<font color="#FFFFFF" face="Calibri">'
-    ret += '<h1 style="color:#D18B47">IARA - Xadrez</h1>'
-    ret += '<h2 style="font-size: 14px;">Desenvolvida por: Adrielly Isly, Diego Moretti, Felipe Botelho, Igor Marcucci, Karlos Eduardo e Henrique Santa Terra</h2>'
-    ret += '<h2 style="font-size: 14px;">Disciplina: Inteligência Artificial - P2</h2>'
+    ret += '<h1 style="color:#D18B47">Xadrez</h1>'
+    ret += '<h2 style="font-size: 14px;">Disciplina: Inteligência Artificial</h2>'
     ret += '<br>'
     ret += '<img width=510 height=510 src="/board.svg?%f"></img></br>' % time.time()
     ret += '<br>'
     ret += '<form action="/game/" method="post"><button name="New Game" type="submit">Novo Jogo</button></form>'
     ret += '<form action="/undo/" method="post"><button name="Undo" type="submit">Desfazer</button></form>'
     ret += '<form action="/move/"><input type="submit" value="Inserir Movimento:"><input name="move" type="text"></input></form>'
-    ret += '<form action="/dev/" method="post"><button name="Comp Move" type="submit">Vez da EVA</button></form>'
+    ret += '<form action="/dev/" method="post"><button name="Comp Move" type="submit">Vez da Ia</button></form>'
     if board.is_stalemate():
         speak("O jogo terminou em empate por impasse.")
     elif board.is_checkmate():
