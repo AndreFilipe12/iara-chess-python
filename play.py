@@ -236,7 +236,7 @@ def main():
     ret += '<form action="/game/" method="post"><button name="New Game" type="submit">Novo Jogo</button></form>'
     ret += '<form action="/undo/" method="post"><button name="Undo" type="submit">Desfazer</button></form>'
     ret += '<form action="/move/"><input type="submit" value="Inserir Movimento:"><input name="move" type="text"></input></form>'
-    ret += '<form action="/dev/" method="post"><button name="Comp Move" type="submit">Vez da Ia</button></form>'
+    ret += '<form action="/dev/" method="post"><button name="Comp Move" type="submit">Vez da Iara</button></form>'
     if board.is_stalemate():
         speak("O jogo terminou em empate por impasse.")
     elif board.is_checkmate():
